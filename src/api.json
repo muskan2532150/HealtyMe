@@ -1,0 +1,122 @@
+[
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7501",
+    "title": "ON Protien",
+    "description": "100% Whey Protein.",
+    "categoryName": "supplements",
+    "price": 3049,
+    "inStock": true,
+    "isDeliveredFast": true,
+    "isTrending": true,
+    "rating": 4,
+    "image": "onPI"
+  },
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7502",
+    "title": "Aurion Hex Dumbbells",
+    "description": "Rubber Coated.",
+    "categoryName": "weights",
+    "price": 1100,
+    "inStock": true,
+    "isDeliveredFast": false,
+    "isTrending": true,
+    "rating": 2,
+    "image": "dumbbellPI"
+  },
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7503",
+    "title": "Leg Press",
+    "description": "Best suited for leg exercises.",
+    "categoryName": "equipments",
+    "price": 7499,
+    "inStock": false,
+    "isDeliveredFast": false,
+    "isTrending": true,
+    "rating": 1,
+    "image": "legPressPI"
+  },
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7504",
+    "title": "5KG Kettlebell",
+    "description": "W e Rubber Grip.",
+    "categoryName": "weights",
+    "price": 799,
+    "inStock": true,
+    "isDeliveredFast": true,
+    "isTrending": true,
+    "rating": 4,
+    "image": "kettlebellPI"
+  },
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7505",
+    "title": "Skipping Rope",
+    "description": "Tangle Free for Kids",
+    "categoryName": "accessories",
+    "price": 199,
+    "inStock": true,
+    "isDeliveredFast": true,
+    "isTrending": false,
+    "rating": 3,
+    "image": "jumpRopePI"
+  },
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7506",
+    "title": "BCAA Energy",
+    "description": "30 Serving, Lychee",
+    "categoryName": "supplements",
+    "price": 999,
+    "inStock": true,
+    "isDeliveredFast": true,
+    "isTrending": false,
+    "rating": 3,
+    "image": "bcaaPI"
+  },
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7507",
+    "title": "Weighted Plates",
+    "description": "Rubber coated plates",
+    "categoryName": "weights",
+    "price": 3999,
+    "inStock": false,
+    "isDeliveredFast": false,
+    "isTrending": false,
+    "rating": 1,
+    "image": "platesPI"
+  },
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7508",
+    "title": "Ab Roller",
+    "description": "Crush Ab exercises",
+    "categoryName": "accessories",
+    "price": 199,
+    "inStock": true,
+    "isDeliveredFast": true,
+    "isTrending": false,
+    "rating": 4,
+    "image": "abRollerPI"
+  },
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7509",
+    "title": "Pec Deck",
+    "description": "Best for chest exercises",
+    "categoryName": "equipments",
+    "price": 8999,
+    "inStock": true,
+    "isDeliveredFast": false,
+    "isTrending": false,
+    "rating": 5,
+    "image": "pecDeckPI"
+  },
+  {
+    "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7510",
+    "title": "MB Whey",
+    "description": "Rich Chocolate Flavor",
+    "categoryName": "supplements",
+    "price": 4699,
+    "inStock": true,
+    "isDeliveredFast": true,
+    "isTrending": false,
+    "rating": 2,
+    "image": "mbPI"
+  }
+]
