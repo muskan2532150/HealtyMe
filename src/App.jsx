@@ -1,13 +1,20 @@
-import { useState } from 'react'
+import { useEffect} from 'react'
 import './App.css'
-import store from './redux/store'
-import { Provider } from 'react-redux'
+import {useDispatch, useSelector } from 'react-redux'
+import {CardThunk} from './redux/CardSlice'
+import Banner from './Components/Banner'
 
 function App() {
+const store = useSelector((state)=>state.card.value);
+const dispatch = useDispatch();
+
+useEffect(() =>{
+  if (store === 0)
+  dispatch(CardThunk())
+},[]);
 
   return (
-    <Provider store={store}>
-    </Provider>
+      <Banner/>
   )
 }
 

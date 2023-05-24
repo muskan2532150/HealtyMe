@@ -4,8 +4,8 @@ const initialState = {
     value: 0,
   }
 
-  const CardThunk = createAsyncThunk('CardThunk', async () => {
-    const Carddata = await (await ( fetch('/api.json'))).json();
+ export const CardThunk = createAsyncThunk('CardThunk', async () => {
+    const Carddata = await (await ( fetch('api.json'))).json();
     return Carddata;
   })
 
