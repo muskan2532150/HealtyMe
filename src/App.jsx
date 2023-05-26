@@ -1,21 +1,21 @@
-import { useEffect} from 'react'
-import './App.css'
-import {useDispatch, useSelector } from 'react-redux'
-import {CardThunk} from './redux/CardSlice'
-import Banner from './Components/Banner'
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { CardThunk } from "./redux/CardSlice";
+import Navbar from "./Components/Navbar";
 
 function App() {
-const store = useSelector((state)=>state.card.value);
-const dispatch = useDispatch();
+  const store = useSelector((state) => state.card.value);
+  const dispatch = useDispatch();
 
-useEffect(() =>{
-  if (store === 0)
-  dispatch(CardThunk())
-},[]);
+  useEffect(() => {
+    if (store === 0) dispatch(CardThunk());
+  }, []);
 
   return (
-      <Banner/>
-  )
+    <div className="App">
+      <Navbar />
+    </div>
+  );
 }
 
-export default App
+export default App;
