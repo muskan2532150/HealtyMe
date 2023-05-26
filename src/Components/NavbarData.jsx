@@ -24,5 +24,4 @@ export const NavbarData = [
         icon: CiLogin,
         link: '/Login'
     }
-]
-
+];
