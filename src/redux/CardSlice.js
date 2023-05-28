@@ -1,10 +1,9 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
-const initialState = {
-    value: 0,
-  }
+const initialState = []
 
  export const CardThunk = createAsyncThunk('CardThunk', async () => {
+  console.log("Thunk called")
     const Carddata = await (await ( fetch('api.json'))).json();
     return Carddata;
   })
