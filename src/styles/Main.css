@@ -4,15 +4,15 @@
   box-sizing: inherit;
 }
 
-.App {
-  width: 100vw;
-  height: 100vh;
-}
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
 }
 
 .sidebar {
@@ -21,17 +21,12 @@ body {
   background-color: #2f4050;
 }
 
-.sidebarList {
-  height: auto;
-  width: 100%;
-}
 .sidebarList .row {
-  width: 100%;
-  height: 60px;
-  border: 1px solid black;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.3803921569);
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   color: white;
   align-items: center;
   justify-content: center;
@@ -41,7 +36,7 @@ body {
   background-color: #293846;
 }
 .sidebarList #active {
-  background-color: #293846;
+  background-color: #1b2b3a;
 }
 
 .row #icon {
@@ -49,7 +44,10 @@ body {
   display: grid;
   place-items: center;
 }
-
 .row #title {
   flex: 70%;
 }
+
+.card-container {
+  display: grid;
+}/*# sourceMappingURL=Main.css.map */
