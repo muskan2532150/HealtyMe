@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   data: [],
-  PerPage:4,
+  PerPage:5,
   currentPage:1
 }
 
