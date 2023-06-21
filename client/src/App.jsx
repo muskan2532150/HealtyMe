@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
       {/* <Navbar /> */}
+      <h1 className="text-red-300">DEmoooooo</h1>
       <CarouselCard/>
       <Product/>
     </div>
