@@ -9,7 +9,7 @@
     "isDeliveredFast": true,
     "isTrending": true,
     "rating": 4,
-    "image": "onPI"
+    "image": "images/Gym-Accessories.jpeg"
   },
   {
     "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7502",
@@ -21,7 +21,7 @@
     "isDeliveredFast": false,
     "isTrending": true,
     "rating": 2,
-    "image": "dumbbellPI"
+    "image": "images/Gym-Accessories.jpeg"
   },
   {
     "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7503",
@@ -33,7 +33,7 @@
     "isDeliveredFast": false,
     "isTrending": true,
     "rating": 1,
-    "image": "legPressPI"
+    "image": "images/Gym-Accessories.jpeg"
   },
   {
     "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7504",
@@ -45,7 +45,7 @@
     "isDeliveredFast": true,
     "isTrending": true,
     "rating": 4,
-    "image": "kettlebellPI"
+    "image": "images/Gym-Accessories.jpeg"
   },
   {
     "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7505",
@@ -57,7 +57,7 @@
     "isDeliveredFast": true,
     "isTrending": false,
     "rating": 3,
-    "image": "jumpRopePI"
+    "image": "images/Gym-Accessories.jpeg"
   },
   {
     "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7506",
@@ -69,7 +69,7 @@
     "isDeliveredFast": true,
     "isTrending": false,
     "rating": 3,
-    "image": "bcaaPI"
+    "image": "images/Gym-Accessories.jpeg"
   },
   {
     "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7507",
@@ -81,7 +81,7 @@
     "isDeliveredFast": false,
     "isTrending": false,
     "rating": 1,
-    "image": "platesPI"
+    "image": "images/Gym-Accessories.jpeg"
   },
   {
     "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7508",
@@ -93,7 +93,7 @@
     "isDeliveredFast": true,
     "isTrending": false,
     "rating": 4,
-    "image": "abRollerPI"
+    "image": "images/Gym-Accessories.jpeg"
   },
   {
     "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7509",
@@ -105,7 +105,7 @@
     "isDeliveredFast": false,
     "isTrending": false,
     "rating": 5,
-    "image": "pecDeckPI"
+    "image": "images/Gym-Accessories.jpeg"
   },
   {
     "id": "c7ee18c1-d14a-4473-9bc6-1d39ca2c7510",
@@ -117,6 +117,6 @@
     "isDeliveredFast": true,
     "isTrending": false,
     "rating": 2,
-    "image": "mbPI"
+    "image": "images/Gym-Accessories.jpeg"
   }
 ]
