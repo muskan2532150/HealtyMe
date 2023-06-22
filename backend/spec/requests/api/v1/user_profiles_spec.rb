@@ -7,6 +7,7 @@ RSpec.describe 'User Profiles API', type: :request do
     parameter name: 'user_id', in: :path, type: :string, description: 'user_id'
 
     get('list user_profiles') do
+      tags 'User Profile'
       response(200, 'successful') do
         let(:user_id) { '123' }
 
@@ -22,6 +23,7 @@ RSpec.describe 'User Profiles API', type: :request do
     end
 
     post('Create user_profile') do
+      tags 'User Profile'
       response(200, 'successful') do
         let(:user_id) { '123' }
 
