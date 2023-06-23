@@ -9,29 +9,30 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def show
-        render @user
+        @profile=@user.user_profile
+        render @profile
     end
 
     def new
         @user = User.new
-        @profile = @user.build_user_profile
+        @user.build_user_profile
     end
 
     def create
-        @user = User.new(User_params)
+        @user = User.new(user_params)
         if @user.save
             render @user
         else
-            render json: { errors: @user.errors }, status: :unprocessable_entity
+            render json: { errors: @user.errors.full_messages }, status: :unprocessable_entity
         end
     end
 
     def update
-        @user = @user.update(User_params)
+        @user = @user.update(user_params)
         if @user.save
             render @user
         else
-            render json: { errors: @user.errors }, status: :unprocessable_entity
+            render json: { errors: @user.errors.full_messages }, status: :unprocessable_entity
         end
     end
 
@@ -47,7 +48,7 @@ class Api::V1::UsersController < ApplicationController
         @user=User.find(params[:id])
     end
 
-    def User_params
+    def user_params
         require(:user).permit(:name,:email,:password,user_profile_attributes: [:phone_no,:profile_pic,:address])
     end
 
