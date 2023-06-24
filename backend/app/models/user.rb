@@ -4,6 +4,6 @@ class User < ApplicationRecord
     validates :password, presence: true
 
     has_one :user_profile, dependent: :destroy
-    accepts_nested_attributes_for :user_profile
+    accepts_nested_attributes_for :user_profile, allow_destroy: true
     has_many :orders, dependent: :destroy
 end
