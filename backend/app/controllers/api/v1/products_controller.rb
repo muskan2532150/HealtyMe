@@ -3,9 +3,9 @@ class Api::V1::ProductsController < ApplicationController
    
     def index
         @product = Product.all
-        # @products = JSON.parse(ProductSerializer.new(@product).serialized_json)
-        # @products[:status] = :ok
-        render json: @product
+        @products = JSON.parse(ProductSerializer.new(@product).serialized_json)
+        @products[:status] = :ok
+        render json: @products
     end
 
     def show
@@ -17,7 +17,7 @@ class Api::V1::ProductsController < ApplicationController
         if @product.save
             render @product
         else
-            render json: { errors: @product.errors }, status: :unprocessable_entity
+            render json: { errors: @product.errors.full_messages }, status: :unprocessable_entity
         end
     end
 
@@ -26,13 +26,15 @@ class Api::V1::ProductsController < ApplicationController
         if @product.save
             render @product
         else
-            render json: { errors: @product.errors }, status: :unprocessable_entity
+            render json: { errors: @product.errors.full_messages }, status: :unprocessable_entity
         end
     end
 
     def destroy
         if @product.destroy
             render @product
+        else
+            render json: { errors: @product.errors.full_messages }, status: :unprocessable_entity
         end
     end
 
@@ -43,6 +45,6 @@ class Api::V1::ProductsController < ApplicationController
     end
 
     def Product_params
-        require(:product).permit(:name,:img,:price)
+        params.require(:product).permit(:name,:img,:price)
     end
 end
