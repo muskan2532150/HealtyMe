@@ -9,8 +9,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :users do
-        resources :user_profiles
-        resources :orders
+        resources :orders, only:[:create]
       end
       resources :products
     end
