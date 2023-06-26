@@ -1,15 +1,12 @@
 import React from "react";
 import { NavbarData } from "./NavbarData";
-// import {GrClose} from 'react-icons/gr'
+
 
 const Navbar = () => {
 
   return (
-    <nav className="sidebar ">
-      {/* <button type="button" onClick={CloseHandler}>
-      <GrClose/>
-      </button > */}
-      <ul className="sidebarList">
+    <nav className="navbar ">
+      <ul className="navbarList">
         {NavbarData.map((item, index) => (
           <li
             key={index}
