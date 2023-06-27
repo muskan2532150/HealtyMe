@@ -1,0 +1,24 @@
+$navbar-width: 200px;
+$navbar-height: 60px; // Height of the top navbar
+$navbar-bg-color: #2f4050;
+$navbar-text-color: #fff;
+$content-padding: 20px;
+
+ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            color: $navbar-text-color;
+            transition: 0.3s;
+
+            &:hover {
+                color: #ff5733; // Change color on hover
+            }
+        }
+    }
+}
