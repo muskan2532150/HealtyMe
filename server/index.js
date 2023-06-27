@@ -20,7 +20,10 @@ mongoose.connection.once('open',()=>{
 })
 
 const userRouter = require('./routes/users');
+const productRouter = require('./routes/products');
+
 app.use('/users',userRouter);
+app.use('/products',productRouter);
 
 app.listen(port,()=>{
     console.log("Connection build");
