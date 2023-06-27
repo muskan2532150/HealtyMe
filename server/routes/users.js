@@ -8,10 +8,9 @@ User.find()
 });
 
 router.route('/add').post((req,res)=>{
-    const username = req.body.username;
-    const profile_pic = req.body.profile_pic;
+    const {username,profile_pic,email,password} = req.body;
 
-    const newUser = new User({username,profile_pic});
+    const newUser = new User({username,profile_pic,email,password});
     
     newUser.save()
     .then(()=>res.json('USER ADDED!!'))
