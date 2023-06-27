@@ -5,9 +5,11 @@ const Schema = mongoose.Schema;
 const productSchema = new Schema({
     name: {type: String, required: true,trim: true },
     price: {type: Number,required: true},
+    desc: {type: String},
+    gender: {type: String},
     img: {type:String,required: true},
     rating: {type:Number},
-    feature: {type: Array},    
+    feature: {type: []},    
 }, {
 timestamps:true
 });
