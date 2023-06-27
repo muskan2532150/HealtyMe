@@ -1,0 +1,42 @@
+.navbar {
+  width: $navbar-width;
+  ;
+  background-color: $navbar-bg-color;
+  color: $navbar-text-color;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.row {
+  font-size: 1.4rem;
+  padding: 0.8rem 0;
+  list-style-type: none;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #293846;
+  }
+}
+
+#active {
+  background-color: #1b2b3a;
+}
+
+.row {
+  #icon {
+    flex: 30%;
+    display: grid;
+    place-items: center;
+  }
+
+  #title {
+    flex: 70%;
+  }
+}
