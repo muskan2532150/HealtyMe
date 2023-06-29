@@ -13,7 +13,7 @@ class Api::V1::ProductsController < ApplicationController
     end
 
     def create
-        @product = Product.new(Product_params)
+        @product = Product.new(product_params)
         if @product.save
             render @product
         else
@@ -22,7 +22,7 @@ class Api::V1::ProductsController < ApplicationController
     end
 
     def update
-        @product = @product.update(Product_params)
+        @product = @product.update(product_params)
         if @product.save
             render @product
         else
@@ -44,7 +44,7 @@ class Api::V1::ProductsController < ApplicationController
         @product=Product.find(params[:id])
     end
 
-    def Product_params
-        params.require(:product).permit(:name,:img,:price)
+    def product_params
+        params.require(:product).permit(:name,:img,:price,:category,:company,:rating,:description,:totalCount)
     end
 end
