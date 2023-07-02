@@ -4,4 +4,5 @@ class User < ApplicationRecord
     validates :password, presence: true
 
     has_one :user_profile, dependent: :destroy
+    has_many :orders, dependent: :destroy
 end
