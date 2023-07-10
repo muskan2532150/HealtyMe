@@ -1,0 +1,219 @@
+---
+openapi: 3.0.1
+info:
+  title: 'HealtyMe API '
+  version: v1
+paths:
+  "/api/v1/users/{user_id}/user_profiles/{user_profile_id}/orders":
+    parameters:
+    - name: user_id
+      in: path
+      description: user_id
+      required: true
+      schema:
+        type: string
+    - name: user_profile_id
+      in: path
+      description: user_profile_id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: List Orders
+      tags:
+      - Orders
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: Create Order
+      tags:
+      - Orders
+      responses:
+        '200':
+          description: successful
+  "/api/v1/users/{user_id}/user_profiles/{user_profile_id}/orders/{id}":
+    parameters:
+    - name: user_id
+      in: path
+      description: user_id
+      required: true
+      schema:
+        type: string
+    - name: user_profile_id
+      in: path
+      description: user_profile_id
+      required: true
+      schema:
+        type: string
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Show Order
+      tags:
+      - Orders
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: Update Order
+      tags:
+      - Orders
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: Delete Order
+      tags:
+      - Orders
+      responses:
+        '200':
+          description: successful
+  "/api/v1/products":
+    get:
+      summary: List Products
+      tags:
+      - Products
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: Create Product
+      tags:
+      - Products
+      responses:
+        '200':
+          description: successful
+  "/api/v1/products/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Show Product
+      tags:
+      - Products
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: Update Product
+      tags:
+      - Products
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete product
+      tags:
+      - Products
+      responses:
+        '200':
+          description: successful
+  "/api/v1/users/{user_id}/user_profiles":
+    parameters:
+    - name: user_id
+      in: path
+      description: user_id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: list user_profiles
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: Create user_profile
+      responses:
+        '200':
+          description: successful
+  "/api/v1/users/{user_id}/user_profiles/{id}":
+    parameters:
+    - name: user_id
+      in: path
+      description: user_id
+      required: true
+      schema:
+        type: string
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Show user_profile
+      tags:
+      - User Profile
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: Update user_profile
+      tags:
+      - User Profile
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: Delete user_profile
+      tags:
+      - User Profile
+      responses:
+        '200':
+          description: successful
+  "/api/v1/users":
+    get:
+      summary: List Users
+      tags:
+      - Users
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: Create User
+      tags:
+      - Users
+      responses:
+        '200':
+          description: successful
+  "/api/v1/users/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Show User
+      tags:
+      - Users
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: Update User
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: Delete User
+      tags:
+      - Users
+      responses:
+        '200':
+          description: successful
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
