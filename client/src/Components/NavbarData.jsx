@@ -1,27 +1,23 @@
-import { SlHome } from 'react-icons/sl';
-import { CgProductHunt } from 'react-icons/cg';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
-import { CiLogin } from 'react-icons/ci';
-
 export const NavbarData = [
     {
-        title: "Home",
-        icon: SlHome,
-        link: '/home'
+        title: "Products",
+        link: '/'
     },
+];
+
+
+export const NavbarDataMobile = [
     {
         title: "Products",
-        icon: CgProductHunt,
-        link: '/Products'
+        link: '/'
+    },
+
+    {
+        title: "Your Account",
+        link: '/profile'
     },
     {
-        title: "Cart",
-        icon: AiOutlineShoppingCart,
-        link: '/Cart'
+        title: "LogOut",
+        link: '/'
     },
-    {
-        title: "Login",
-        icon: CiLogin,
-        link: '/Login'
-    }
 ];
