@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination  button {
+    width: auto;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;    
+}
+
+.pagination button:hover,  .pagination button.active {
+            background-color: #2f4050;
+            color: #fff;
+            border-radius: 20%;
+        }
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
