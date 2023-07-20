@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import CardGrid from './CardGrid';
 import Pagination from './Pagination';
@@ -14,20 +14,17 @@ const Product = () => {
     };
 
     return (
-        <div className='product-page'>
-            <h1>Shop the Latest Collection</h1>
-            <div className='product-grid'>
+        <div>
             <CardGrid
                 products={data}
                 cardsPerPage={cardsPerPage}
                 currentPage={currentPage}
             />
-             </div>
-            <Pagination
+            {totalPages > 1 ?<Pagination
                 currentPage={currentPage}
                 totalPages={totalPages}
                 onPageChange={onPageChange}
-            />
+            /> : null }
         </div >
     )
 }
