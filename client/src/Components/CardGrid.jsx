@@ -13,7 +13,7 @@ const CardGrid = ({ products, cardsPerPage, currentPage }) => {
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {currentCards.map((product) => (
-            <Link to={{ pathname: `/product/${product.id}`, state: product }}
+            <Link to={`/product/${product.id}`}
             >  <div key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                   <img
@@ -24,11 +24,11 @@ const CardGrid = ({ products, cardsPerPage, currentPage }) => {
                 </div>
                 <div className="mt-4 flex justify-between">
                   <div>
-                    <h3 className="text-sm text-gray-700">
+                    <h3 className="text-md font-md text-gray-700 font-bold">
                       {product.attributes.name}
                     </h3>
                   </div>
-                  <p className="text-sm font-medium text-gray-900">{product.attributes.price}</p>
+                  <p className="text-md font-md text-gray-900 font-bold">Rs.{product.attributes.price}</p>
                 </div>
               </div>
             </Link>
