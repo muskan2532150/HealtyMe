@@ -56,6 +56,7 @@ RSpec.describe 'Users API', type: :request do
     end
 
     put('Update User') do
+      tags 'Users'
       response(200, 'successful') do
         let(:id) { '123' }
 
