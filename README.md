@@ -55,7 +55,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [live demo]()
+- [live demo]() coming soon 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,10 +140,6 @@ If you like this project make sure to give it a star
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-- [Microverse](https://www.microverse.org/)
-- Original design idea by:  [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
-- [Creative Commons](https://creativecommons.org)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
